@@ -1,0 +1,257 @@
+
+    .dashboardBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .userIdentity,
+    .statistics,
+    .graphicalStatistics,
+    .appointmentList {
+        width: 100%; /* Fixed width */
+        padding: 4px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border-radius: 8px;
+         overflow-x: auto; /* Enable horizontal scrolling if necessary */
+    }
+
+    /* Customize colors for each box */
+    .userIdentity {
+        background-color: #f2dede; /* Light Red */
+        height: 40px; /* Fixed height */
+        display: flex; /* Use flexbox */
+        align-items: center; /* Align items vertically center */
+
+    }
+
+    .statistics {
+        background-color: #dff0d8; /* Light Green */
+        height: 200px; /* Fixed height */
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Align items with space between */
+       
+        padding: 5px; /* Adjust padding as needed */
+    }
+
+
+    .statisticsHaed{
+        display: flex;
+        align-items: center;
+    }
+
+    .TotalDoctors {
+        background-color: #ffcccc; /* Light Red */
+        border: 2px solid #ff6666; /* Red */
+    }
+
+    .TotalPatients {
+        background-color: #ccffcc; /* Light Green */
+        border: 2px solid #66ff66; /* Green */
+    }
+
+    .TotalAppointments {
+        background-color: #ccccff; /* Light Blue */
+        border: 2px solid #6666ff; /* Blue */
+    }
+
+    .TotalEarning {
+        background-color: #ffffcc; /* Light Yellow */
+        border: 2px solid #ffff66; /* Yellow */
+    }
+
+    .TotalDoctors,
+    .TotalPatients,
+    .TotalAppointments,
+    .TotalEarning {
+        padding: 11px;
+        margin-right: 20px; /* Add space between boxes */
+        border-radius: 6px;
+        height: 160px;
+        width: 300px;
+        flex-shrink: 0; /* Prevent items from shrinking */
+
+            align-items: center; /* Align items vertically center */
+    }
+
+        .TotalDoctors img,
+        .TotalPatients img,
+        .TotalAppointments img,
+        .TotalEarning img {
+            width: 50px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 60%; /* Make the image circular */
+            border: 2px solid ; /* Add a border */
+            margin-right: 10px; /* Add margin between the picture and the text */
+        }
+
+        .TotalDoctors h3,
+        .TotalPatients h3,
+        .TotalAppointments h3,
+        .TotalEarning h3 {
+            margin-left: 8px;
+        }
+
+        .TotalDoctors p,
+        .TotalPatients p,
+        .TotalAppointments p,
+        .TotalEarning p {
+           text-align: center;
+           font-size:20px;
+
+        }
+    .statisticstail img {
+
+        
+        margin-left: 235px;
+        border: 0px;
+        margin-bottom: 10px;
+        
+        
+    }
+
+
+    .appointmentList {
+        background-color: #fcf8e3; /* Light Yellow */
+         height: 410px; /* Fixed height */
+    }
+
+    .raphicalStatistics {
+        background-color: #d9edf7; /* Light Blue */
+        height: 350px; /* Fixed height */
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch; /* Boxes will stretch to match height of container */
+        flex-direction: row; /* Display boxes side by side */
+    }
+
+    
+    .graphicalStatistics {
+        background-color: #d9edf7; /* Light Blue */
+        height: 350px; /* Fixed height */
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch; /* Boxes will stretch to match height of container */
+        flex-direction: row; /* Display boxes side by side */
+    }
+
+    
+.box {
+    flex-grow: 1;
+    padding: 2px;
+    border: 1px solid #000;
+    margin: 5px;
+    border-radius: 5px;
+    }
+
+    .patienceStats {
+        background-color: lightblue;
+        width: 60%;
+    }
+
+    .appointmentChart {
+        background-color: lightgreen;
+    }
+
+    .box h2 {
+        margin-top: 10px; /* Adjust the margin-top as needed */
+        display: inline; /* Display inline */
+    }
+    .PieChart, .BarChart {
+    width: 99%;
+    height: 260px; /* Set your desired height */
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    border: 2px solid #ccc; /* Light grey border */
+    margin-top: 20px;
+        display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+  .patienceStatsHaed {
+        display: flex; /* Use flexbox to align items horizontally */
+        align-items: center; /* Align items vertically */
+        margin-bottom: -20px; 
+    }
+    .patienceStatsHaed button {
+        display: inline-block; /* Display elements in a line */
+        margin-right: 10px; /* Add some space between elements */
+        /* Add some space between elements */
+    }
+
+        .Month {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Font size */
+        margin-left: 350px; 
+    }
+    .Week{
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove default button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Font size */
+        margin-top: 0px;
+        
+    }
+
+    /* Add hover effect */
+    .Month:hover  {
+        background-color: #0056b3; /* Darker blue background color */
+    }
+    .Week:hover {
+        background-color: #0056b3; /* Darker blue background color */
+    }
+
+    .appointmentListHaed {
+        display: flex; /* Use flexbox to align items horizontally */
+        align-items: center; /* Align items vertically */
+    }
+    .appointmentListHaed h2 {
+        margin-top: 10px; /* Adjust the margin-top as needed */
+    }
+    .Date {
+         /* Adjust the margin-top as needed */
+        margin-left: 500px;
+    }
+    .inputDate {
+        font-size: 25px;
+        margin-top: 0px;
+        background-color: #d5f8ff;
+        border-radius: 2px;
+        margin-left: 500px;
+    }
+.appointmentListTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.appointmentListTable th,
+.appointmentListTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.appointmentListTable th {
+    background-color: #f2f2f2;
+}
+
+.appointmentListTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.appointmentListTable tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.appointmentListTable tbody tr:hover {
+    background-color: #666;
+}
+
+

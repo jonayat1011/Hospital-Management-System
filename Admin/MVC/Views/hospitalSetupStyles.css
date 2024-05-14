@@ -1,0 +1,316 @@
+.hospitalSetupBody {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .userIdentity {
+            width: 100%; /* Fixed width */
+            padding: 4px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            overflow-x: auto; /* Enable horizontal scrolling if necessary */
+            background-color: #f2dede; /* Light Red */
+            height: 40px; /* Fixed height */
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically center */
+        }
+        
+        .userButtons {
+            display: flex;
+            justify-content: space-around; /* Align buttons with equal space between them */
+            border-radius: 8px;
+            background-color: #d5f8ff; /* Light Red */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            width: 50%;
+        }
+/* Style for userButtons buttons */
+.userButtons button {
+    width: 200px; /* Set fixed width for all buttons */
+    height: 40px; /* Set fixed height for all buttons */
+    margin: 5px; /* Add margin */
+    border: 2px solid #151548;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #797ad5; /* Blue */
+    color: #fff; /* White */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Add smooth transition on hover */
+}
+
+.userButtons button:hover {
+    background-color: #61064fdb; /* Darker Blue on hover */
+}
+
+/* Style for userButtons container */
+.userButtons {
+    display: flex;
+    justify-content: space-around; /* Align buttons with equal space between them */
+    width: 100%; /* Make the container full width */
+}
+
+        .setupBox {
+            border: 3px solid #939607;
+            border-radius: 8px;
+            padding: 0px 20px; /* Adjust padding */
+            background-color: #e9eac8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 40%;
+        }
+        
+        /* Setup sections */
+        .SetupSection {
+            display: none;
+        }
+        
+        .SetupSection.active {
+            display: block;
+        }
+        
+        /* Container for user buttons and setup box */
+        .userAndSetupContainer {
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically center */
+            justify-content: space-between; /* Align items with equal space between them */
+            margin-top: 2px;
+        }
+    
+     
+
+ .backgroundBox {
+            padding: 1px; /* Adjust padding */
+            border-radius: 8px; /* Add border radius for rounded corners */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+            height: 900px;
+
+        }
+
+        .doctorBackgroundBox {
+            background-color: #f0f4c3; /* Pale green */
+        }
+
+        .staffBackgroundBox {
+            background-color: #ffcc80; /* Light orange */
+        }
+
+        .patientBackgroundBox {
+            background-color: #b3e5fc; /* Light sky blue */
+        }
+
+        .departmentBackgroundBox {
+            background-color: #d1c4e9; /* Pale purple */
+        }
+
+/* Style for operationChosen */
+/* Container for flex items */
+.operationBackgroundBox {
+    display: flex; /* Use flexbox */
+
+}
+
+          
+/* Style for operationChosen */
+.operationChosen {
+    background-color: lightblue;
+    padding: 20px;
+    width:20%;
+    border-radius: 8px;
+}
+
+/* Style for operationBody */
+.operationBody {
+    background-color: lightgreen;
+    padding: 1px;
+    width: 77%;
+    border-radius: 8px;
+    margin-left: 3px;
+    overflow-y: auto;
+}
+
+/* Style for DoctorSetupbtn */
+.DoctorSetupbtn, .StaffSetupbtn, .PatientSetupbtn, .DepartmentSetupbtn {
+    padding: 10px 16px; /* Adjust padding */
+    margin: 5px; /* Add margin */
+    border: 2px solid #151548;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Change background color to green */
+    color: white;
+    font-size: 16px;
+    width: 200px; /* Set fixed width for all buttons */
+    height: auto; /* Set fixed height for all buttons */
+    transition: background-color 0.3s; /* Add smooth transition on hover */
+}
+
+    .DoctorSetupbtn:hover, .StaffSetupbtn:hover, .PatientSetupbtn:hover, .DepartmentSetupbtn:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+/* Style for operationButtons container */
+    .doctorButtons, .staffButtons, .patientButtons, .departmentButtons {
+        display: flex;
+        flex-wrap: wrap; /* Allow buttons to wrap if they exceed the container width */
+        justify-content: center; /* Center-align buttons */
+    }
+.centeredBox {
+    width: 75%; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    max-height: 850px; /* Maximum height for scrolling */
+    background-color: #f0f0f0; /* Example background color */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically */
+    margin: 0 auto; /* Center horizontally */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px; /* Adjust padding */
+    overflow-y: auto;
+    
+}
+
+.form-group {
+    margin-bottom: 20px; /* Add margin between form elements */
+}
+
+label {
+    display: block; /* Display labels as block elements for vertical stacking */
+    margin-bottom: 5px; /* Add margin below labels */
+    font-weight: bold; /* Make labels bold */
+}
+
+label + p {
+    margin-top: 5px; /* Add margin between label and paragraph */
+    font-size: 14px; /* Adjust font size for paragraph */
+    color: #666; /* Set color for paragraph */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%; /* Make input fields and select box full-width */
+    padding: 10px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Adjust font size */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green background color for submit button */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add cursor pointer on hover */
+    font-size: 16px; /* Adjust font size */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.hade {
+    font-size: 24px; /* Adjust font size for the header */
+    margin-bottom: 20px; /* Add margin below the header */
+}
+
+.searchById {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+#searchByIdInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjust margin as needed */
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+}
+
+#searchByIdButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#searchByIdButton:hover {
+    background-color: #45a049;
+}
+.updateHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+.updateHeader h1 {
+
+    margin-left: 200px;
+    font-size: 20px;
+}
+#searchByIdInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Adjust margin as needed */
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+}
+
+#searchByIdButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#searchByIdButton:hover {
+    background-color: #45a049;
+}
+
+
+    /* Table styles */
+    .ListOfDoctors table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .ListOfDoctors th,
+    .ListOfDoctors td {
+        padding: 8px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .ListOfDoctors th {
+        background-color: #f2f2f2;
+    }
+
+    /* Alternating row colors */
+    .ListOfDoctors tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    /* Hover effect */
+    .ListOfDoctors tbody tr:hover {
+        background-color: #e2e2e2;
+    }
+

@@ -1,0 +1,142 @@
+        body {
+            background-color: #fdfefe;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif; /* Optional: Use a standard font */
+        }
+
+        header {
+            background-color: #fdfefe;
+            
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Vertically center the content */
+        }
+
+        .logo img {
+            width: 200px; /* Adjust width of the logo */
+            height: 85px; /* Maintain aspect ratio */
+            margin-right: auto; /* Add some space between logo and search bar */
+        }
+
+        .search-container {
+            flex: 1; /* Takes up remaining space */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+        }
+
+        .search-bar {
+
+         
+            width: 500px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px;
+            outline: none; /* Remove default input focus outline */
+            margin: 0 10px; /* Add margin for spacing */
+        } 
+
+        /* Style the search button */
+        .search-btn {
+    
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* On smaller screens, adjust search bar width */
+        @media screen and (max-width: 600px) {
+            .search-bar {
+                width: 200px;
+            }
+        }
+
+
+        /* Style for round buttons */
+        .round-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 10px; /* Add margin for spacing */
+            cursor: pointer;
+        }
+
+        section {
+            display: flex;
+        }
+
+        nav {
+            float: left;
+            width: 15%;
+            height:1000px; /* only for demonstration, should be removed */
+            background: #fdfefe;
+            padding: 15px;
+        }
+
+
+         .navButton  {
+            padding: 10px 20px;
+            width: 100%;
+            cursor: pointer;
+            background-color: #fdfefe; /*#d5f8ff;*/
+            margin: 0 10px;
+            margin-bottom: 10px;/* Move the login button to the left */
+            border-radius: 5px;
+
+        }
+
+        .navButton:hover {
+             background-color: #d5f8ff;/* Change to desired hover color */
+        }
+
+        .navButton img {
+            width: 30px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+            /*border-radius: 60%;*/
+            object-fit: cover; /* Adjust as needed (e.g., cover, contain) */
+            float: left;
+        }
+        .navButton span {
+           font-size: 20px;
+        }
+        .navButtonOpen  {
+            padding: 10px 20px;
+            width: 100%;
+            cursor: pointer;
+            background-color: #d5f8ff; /*#d5f8ff;*/
+            margin: 0 10px;
+            margin-bottom: 10px; /* Move the login button to the left */
+            border-radius: 5px;
+
+        }
+
+        .navButtonOpen:hover {
+             background-color: #d5f8ff;/* Change to desired hover color */
+        }
+
+        .navButtonOpen img {
+            width: 30px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+            /*border-radius: 60%;*/
+            object-fit: cover; /* Adjust as needed (e.g., cover, contain) */
+            float: left;
+        }
+        .navButtonOpen span {
+           font-size: 20px;
+        }
+    aside {
+        float: right;
+        padding: 5px;
+        width: 82%;
+        background-color: #d5f8ff;
+        height: 1030px; /* only for demonstration, should be removed */
+        border: 1px solid #ccc; /* Add this line to give a border */
+        border-radius: 8px;
+    }
+    
+
+    
