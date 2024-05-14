@@ -1,0 +1,172 @@
+    /*////////// Home.php //// */
+        body {
+            background-color: #fdfefe;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            font-family: Arial, sans-serif; /* Optional: Use a standard font */
+        }
+        header {
+            background-color: #fdfefe;
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Vertically center the content */
+        }
+        .homelogo img {
+            width: 200px; /* Adjust width of the logo */
+            height: 85px; /* Maintain aspect ratio */
+            margin-right: auto; /* Add some space between logo and search bar */
+        }
+                .homesearch-container {
+            flex: 1; /* Takes up remaining space */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Horizontally center the content */
+            align-items: center; /* Vertically center the content */
+        }
+
+        .homesearch-bar {
+
+         
+            width: 500px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc; /* Add border */
+            border-radius: 5px;
+            outline: none; /* Remove default input focus outline */
+            margin: 0 10px; /* Add margin for spacing */
+        } 
+
+        /* Style the search button */
+        .homesearch-btn {
+    
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* On smaller screens, adjust search bar width */
+        @media screen and (max-width: 600px) {
+            .homesearch-bar {
+                width: 200px;
+            }
+        }
+
+        .homeloginButton {
+             padding: 10px 20px;
+            width: 10%;
+            cursor: pointer;
+            background-color: #fdfefe;
+            margin: 0 10px;
+            margin-left: auto; /* Move the login button to the left */
+            border-radius: 5px;
+            outline: none;
+        }
+        .homeloginButton:hover {
+            background-color: #d5f8ff;/* Change to desired hover color */
+        }
+
+        .homeloginButton img {
+            width: 30px; /* Adjust width as needed */
+            height: 30px; /* Adjust height as needed */
+            border-radius: 60%;
+            object-fit: cover; /* Adjust as needed (e.g., cover, contain) */
+            float: left;
+        }
+        .homeloginButton span {
+          
+            font-size: 20px;
+           
+        }
+    /*////////////  Log.php ///// */
+    /* Centered Box Styles */
+        .log-center-box {
+            width: 300px; /* Adjust width as needed */
+            margin: 0 auto;
+            margin-top: 100px; /* Adjust top margin for vertical positioning */
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Styles */
+        .log-form {
+            text-align: center;
+        }
+
+        .log-input[type="text"], .log-input[type="password"] {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .log-input[type="text"]::placeholder, .log-input[type="password"]::placeholder {
+            color: #aaa; /* Placeholder text color */
+        }
+
+        .log-button {
+            padding: 8px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .log-button:hover {
+            background-color: #45a049;
+        }
+
+        .log-logo {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px; /* Adjust width as needed */
+        }
+
+        .log-error {
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .log-forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .log-forgot-password:hover {
+            text-decoration: underline;
+            color: #444;
+        }
+
+        /* Tooltip Styles */
+        .log-tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .log-tooltip .tooltiptext {
+            visibility: hidden;
+            width: 160px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            top: -30px;
+            left: 50%;
+            margin-left: -80px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .log-tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
