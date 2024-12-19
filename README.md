@@ -1,4 +1,4 @@
-# Webtarget HMS (Hospital Management System)
+# Hospital Management System
 
 **Webtarget HMS** is a comprehensive Hospital Management System designed to optimize healthcare operations by automating administrative, clinical, and financial processes. 
 
